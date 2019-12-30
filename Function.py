@@ -23,13 +23,20 @@ print_time(x)  # here x won't be printed but need to pass as a parameter
 
 # 2
 
-def get_initial(name):
-    initial = name[0:1].upper()
+def get_initial(name, force_uppercase=True):  # parameter can be defaulted
+    if(force_uppercase):
+        initial = name[0:1].upper()
+    else:
+        initial = name[0:1]
     return initial
 
 
 first_name = input('What is your first name? ')
 last_name = input('What is your last name? ')
 
-print('Initials of your name are ' +
-      get_initial(first_name) + ' ' + get_initial(last_name))
+if(first_name.isdigit() or last_name.isdigit()):
+    print('Please enter a valid string')
+else:
+    print('Initials of your name are ' + get_initial(name=first_name) +
+          ' ' + get_initial(last_name, False))
+    # not necessary to pass second paramete since defaulted as True
