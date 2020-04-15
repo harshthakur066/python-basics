@@ -7,7 +7,7 @@ user = {
     'numbers': [1, 2, 3, 5]
 }
 
-print(user.items())
+print(user.items())  # returns a tupple
 print(user.get('knowledge'))  # return the value if exists otherwise None
 print(user.values())
 print(user.keys())
