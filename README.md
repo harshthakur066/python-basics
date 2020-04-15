@@ -1,5 +1,5 @@
 # python-basics
 
-Basic codes for python
+Basic code for python
 
-It is better to understand roots before AI and ML
+It is better to understand the roots before AI/ML
