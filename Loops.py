@@ -8,6 +8,16 @@ for name in games:
 
 print()
 
+for i in range(0, 20, 2):
+    print(i)
+
+print()
+
+for i, char in enumerate([1, 2, 4, 5, 7, 54, 6]):
+    print(i, char)
+
+print()
+
 # While
 index = 0
 while index < len(games):
